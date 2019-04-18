@@ -1,5 +1,7 @@
 package com.vauke.string.easy;
 
+import java.util.Stack;
+
 /**
  * No.917
  * Difficulty : Easy
@@ -37,7 +39,7 @@ public class ReverseOnlyLetters {
     }
 
     // another way
-    public String reverseOnlyLetters(String s) {
+    public String reverseOnlyLetters1(String s) {
         StringBuilder result = new StringBuilder();
 
         for (int i = 0, len = s.length(), j = len - 1; i < len; i++) {
@@ -52,8 +54,7 @@ public class ReverseOnlyLetters {
             } else {
                 result.append(c);
             }
-
-            return result.toString();
         }
+        return result.toString();
     }
 }
