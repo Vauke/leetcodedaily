@@ -1,4 +1,9 @@
-package com.vauke.string.easy
+package com.vauke.string.easy;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * No.804

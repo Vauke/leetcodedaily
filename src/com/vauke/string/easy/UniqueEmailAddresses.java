@@ -1,4 +1,6 @@
-package com.vauke.string.easy
+package com.vauke.string.easy;
+
+import java.util.Set;
 
 /**
  * No.929
