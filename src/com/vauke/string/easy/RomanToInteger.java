@@ -70,10 +70,11 @@ public class RomanToInteger {
         }};
 
         for(int i = 0, len = s.length() - 1; i < len; i++){
-            result += sin.get(String.valueOf(s.charAt(i)));
+            String s = String.valueOf(s.charAt(i));
+            result += sin.get(s);
             
             if (dou.containsKey(s.substring(i, i + 2))) {
-                result -= sin.get(String.valueOf(s.charAt(i))) * 2;
+                result -= sin.get(s) * 2;
             }
         }
 
