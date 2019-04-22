@@ -14,8 +14,8 @@ import java.util.Set;
  * Created by Vauke on 2019-04-18 16:05
  */
 public class UniqueMoseCodeWords {
-    /* 26/0.75 = 35 */
-    private static Map<Character, String> mapper = new HashMap<>(35);
+    /* 26/0.75 + 1 = 36 */
+    private static Map<Character, String> mapper = new HashMap<>(36);
 
     static {
         String[] morse = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
