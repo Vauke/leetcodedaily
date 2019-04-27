@@ -16,10 +16,10 @@ public class ImplementStrStr {
         int hLen  = needle.length();
         int index = -1;
 
-        for (int i = 0; i < nLen; i++) {
-            char nChar = needle.charAt(i);
-            for (int j = index + 1; j < hLen; j++) {
-                char hChar = haystack.charAt(j);
+        for (int i = 0; i < hLen; i++) {
+            char hChar = haystack.charAt(i);
+            for (int j = index + 1; j < nLen; j++) {
+                char nChar = needle.charAt(j);
 
                 if (nChar == hChar) {
                     index = j;
