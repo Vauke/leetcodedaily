@@ -40,4 +40,19 @@ public class ImplementStrStr {
 
         return -1;
     }
+
+    // another way
+    public int strStr2(String haystack, String needle) {
+        int hLen = haystack.length();
+        int nLen = needle.length();
+
+        if (nLen > hLen) return -1;
+        if (nLen == 0) return 0;
+
+        for (int i = 0; i < hLen - nLen + 1; i++) {
+            if (needle.equals(haystack.substring(i, i + nLen))) return i;
+        }
+
+        return -1;
+    }
 }
